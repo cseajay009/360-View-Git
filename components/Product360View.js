@@ -1,7 +1,7 @@
 // components/Product360View.js
 
 import dynamic from 'next/dynamic';
-import { Analytics } from "@vercel/analytics/react"
+
 const React360Viewer = dynamic(() => import('react-360-view'), {
   ssr: false
 });

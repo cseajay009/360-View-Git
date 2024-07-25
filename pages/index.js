@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Product360View from '../components/Product360View';
+import { Analytics } from "@vercel/analytics/react";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,6 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Product 360 View</h1>
         <Product360View />
+        <Analytics />
       </main>
     </div>
   );
